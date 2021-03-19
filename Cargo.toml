@@ -1,0 +1,22 @@
+[package]
+name = "testtel"
+version = "0.1.0"
+authors = [""]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = "*"
+async-graphql-warp = "*"
+tokio = { version = "*", features = ["macros", "rt-multi-thread", "time"] }
+warp = "*"
+http = "0.2"
+slab = "0.4.2"
+tracing = "*"
+tracing-futures = "*"
+tracing-subscriber = "*"
+opentelemetry = { version = "*", features = ["tokio-support"] }
+tracing-opentelemetry = "*"
+opentelemetry-otlp = "*"
+opentelemetry-jaeger = "*"
